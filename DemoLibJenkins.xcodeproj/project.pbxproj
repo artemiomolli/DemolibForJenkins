@@ -8,12 +8,16 @@
 
 /* Begin PBXBuildFile section */
 		D45E2C032224244C00BE7AAD /* DemoLibJenkins.h in Headers */ = {isa = PBXBuildFile; fileRef = D45E2C012224244C00BE7AAD /* DemoLibJenkins.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D45E2C0B2224246400BE7AAD /* LibTestFiles.h in Headers */ = {isa = PBXBuildFile; fileRef = D45E2C092224246400BE7AAD /* LibTestFiles.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D45E2C0C2224246400BE7AAD /* LibTestFiles.m in Sources */ = {isa = PBXBuildFile; fileRef = D45E2C0A2224246400BE7AAD /* LibTestFiles.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		D45E2BFE2224244C00BE7AAD /* DemoLibJenkins.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DemoLibJenkins.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D45E2C012224244C00BE7AAD /* DemoLibJenkins.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DemoLibJenkins.h; sourceTree = "<group>"; };
 		D45E2C022224244C00BE7AAD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D45E2C092224246400BE7AAD /* LibTestFiles.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LibTestFiles.h; sourceTree = "<group>"; };
+		D45E2C0A2224246400BE7AAD /* LibTestFiles.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LibTestFiles.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,6 +52,8 @@
 			children = (
 				D45E2C012224244C00BE7AAD /* DemoLibJenkins.h */,
 				D45E2C022224244C00BE7AAD /* Info.plist */,
+				D45E2C092224246400BE7AAD /* LibTestFiles.h */,
+				D45E2C0A2224246400BE7AAD /* LibTestFiles.m */,
 			);
 			path = DemoLibJenkins;
 			sourceTree = "<group>";
@@ -59,6 +65,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D45E2C0B2224246400BE7AAD /* LibTestFiles.h in Headers */,
 				D45E2C032224244C00BE7AAD /* DemoLibJenkins.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -130,6 +137,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D45E2C0C2224246400BE7AAD /* LibTestFiles.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,21 +266,23 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = 6QRS4MC8W2;
+				DEVELOPMENT_TEAM = "";
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = DemoLibJenkins/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = orion.demo.DemoLibJenkins;
+				PRODUCT_BUNDLE_IDENTIFIER = orion.demo.DemoLibJenkins3;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -282,21 +292,23 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = 6QRS4MC8W2;
+				DEVELOPMENT_TEAM = "";
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = DemoLibJenkins/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = orion.demo.DemoLibJenkins;
+				PRODUCT_BUNDLE_IDENTIFIER = orion.demo.DemoLibJenkins3;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
